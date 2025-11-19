@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FlashWords — 영어 단어 암기</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>FlashWords</h1>
+
+    <div id="card" class="card">
+      <div id="front" class="side">Loading...</div>
+      <div id="back" class="side hidden"></div>
+    </div>
+
+    <div class="controls">
+      <button id="revealBtn">뜻 보여주기</button>
+      <button id="nextBtn">다음</button>
+      <button id="markBtn">암기/미암기 토글</button>
+      <button id="shuffleBtn">섞기</button>
+    </div>
+
+    <div class="status">
+      <span id="progress">0 / 0</span>
+      <span id="learnedCount">암기: 0</span>
+    </div>
+
+    <small class="hint">암기 표시하면 다음에 제외하거나 우선순위를 낮출 수 있어요.</small>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
